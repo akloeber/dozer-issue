@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+    <mapping>
+        <class-a>dozer.model.RootA</class-a>
+        <class-b>dozer.model.RootB</class-b>
+        <field relationship-type="non-cumulative" remove-orphans="true">
+            <a>list</a>
+            <b>list</b>
+            <a-hint>dozer.model.ItemA</a-hint>
+            <b-hint>dozer.model.ItemB</b-hint>
+        </field>
+    </mapping>
+</mappings>
